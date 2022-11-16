@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("webfonts/Flaticon.eot");
+  src: url("webfonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("webfonts/Flaticon.woff") format("woff"),
+       url("webfonts/Flaticon.ttf") format("truetype"),
+       url("webfonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("webfonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+[class^="flaticon-"],
+[class*="flaticon-"]{   
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-transform: none;
+  font-kerning: auto;
+  -webkit-font-kerning: auto;
+  -moz-font-kerning: auto;
+}
+
+
+
+
+
+.flaticon-3d:before { content: "\f100"; }
+.flaticon-aac-file-type-rounded-rectangular-solid-interface-symbol:before { content: "\f101"; }
+.flaticon-admin-panel:before { content: "\f102"; }
+.flaticon-album:before { content: "\f103"; }
+.flaticon-android:before { content: "\f104"; }
+.flaticon-anime:before { content: "\f105"; }
+.flaticon-anonyn-mask:before { content: "\f106"; }
+.flaticon-apple:before { content: "\f107"; }
+.flaticon-apps:before { content: "\f108"; }
+.flaticon-arw-down:before { content: "\f109"; }
+.flaticon-arw-right:before { content: "\f10a"; }
+.flaticon-arw-up:before { content: "\f10b"; }
+.flaticon-audiobook:before { content: "\f10c"; }
+.flaticon-banned:before { content: "\f10d"; }
+.flaticon-beer:before { content: "\f10e"; }
+.flaticon-bell:before { content: "\f10f"; }
+.flaticon-bell-ring:before { content: "\f110"; }
+.flaticon-binocular:before { content: "\f111"; }
+.flaticon-bitcoin:before { content: "\f112"; }
+.flaticon-bold:before { content: "\f113"; }
+.flaticon-bomb:before { content: "\f114"; }
+.flaticon-bones-skull:before { content: "\f115"; }
+.flaticon-book:before { content: "\f116"; }
+.flaticon-box:before { content: "\f117"; }
+.flaticon-boxset:before { content: "\f118"; }
+.flaticon-bulb:before { content: "\f119"; }
+.flaticon-calendar:before { content: "\f11a"; }
+.flaticon-christmas-ball:before { content: "\f11b"; }
+.flaticon-christmas-tree:before { content: "\f11c"; }
+.flaticon-clock-alarm:before { content: "\f11d"; }
+.flaticon-cloud-two-ways:before { content: "\f11e"; }
+.flaticon-comics:before { content: "\f11f"; }
+.flaticon-comments:before { content: "\f120"; }
+.flaticon-computer:before { content: "\f121"; }
+.flaticon-concert:before { content: "\f122"; }
+.flaticon-cone:before { content: "\f123"; }
+.flaticon-crown:before { content: "\f124"; }
+.flaticon-direct-download:before { content: "\f125"; }
+.flaticon-discography:before { content: "\f126"; }
+.flaticon-divx:before { content: "\f127"; }
+.flaticon-documentary:before { content: "\f128"; }
+.flaticon-documentary2:before { content: "\f129"; }
+.flaticon-dollar-settings:before { content: "\f12a"; }
+.flaticon-download:before { content: "\f12b"; }
+.flaticon-dreamcast:before { content: "\f12c"; }
+.flaticon-dvd:before { content: "\f12d"; }
+.flaticon-ebook:before { content: "\f12e"; }
+.flaticon-ebook-academic:before { content: "\f12f"; }
+.flaticon-ebook-fiction:before { content: "\f130"; }
+.flaticon-ebook-manga:before { content: "\f131"; }
+.flaticon-emulation:before { content: "\f132"; }
+.flaticon-envelope:before { content: "\f133"; }
+.flaticon-envelope-read:before { content: "\f134"; }
+.flaticon-faces:before { content: "\f135"; }
+.flaticon-fire:before { content: "\f136"; }
+.flaticon-folder:before { content: "\f137"; }
+.flaticon-gameboy:before { content: "\f138"; }
+.flaticon-gameboy-advance:before { content: "\f139"; }
+.flaticon-gamecube:before { content: "\f13a"; }
+.flaticon-games:before { content: "\f13b"; }
+.flaticon-ghost:before { content: "\f13c"; }
+.flaticon-group:before { content: "\f13d"; }
+.flaticon-h264:before { content: "\f13e"; }
+.flaticon-halloween-evil-pumpkin:before { content: "\f13f"; }
+.flaticon-halloween-pumpkin:before { content: "\f140"; }
+.flaticon-happy:before { content: "\f141"; }
+.flaticon-hash-tag:before { content: "\f142"; }
+.flaticon-hat:before { content: "\f143"; }
+.flaticon-hd:before { content: "\f144"; }
+.flaticon-heart:before { content: "\f145"; }
+.flaticon-hexagon:before { content: "\f146"; }
+.flaticon-hexagon-white:before { content: "\f147"; }
+.flaticon-hook:before { content: "\f148"; }
+.flaticon-href-link:before { content: "\f149"; }
+.flaticon-images:before { content: "\f14a"; }
+.flaticon-info:before { content: "\f14b"; }
+.flaticon-invisible-person:before { content: "\f14c"; }
+.flaticon-invites:before { content: "\f14d"; }
+.flaticon-italic:before { content: "\f14e"; }
+.flaticon-japanese-dragon:before { content: "\f14f"; }
+.flaticon-japanese-shuriken:before { content: "\f150"; }
+.flaticon-katanas:before { content: "\f151"; }
+.flaticon-key:before { content: "\f152"; }
+.flaticon-left-arrow:before { content: "\f153"; }
+.flaticon-letter-x:before { content: "\f154"; }
+.flaticon-linux:before { content: "\f155"; }
+.flaticon-lips:before { content: "\f156"; }
+.flaticon-list:before { content: "\f157"; }
+.flaticon-lock:before { content: "\f158"; }
+.flaticon-logout:before { content: "\f159"; }
+.flaticon-lossless:before { content: "\f15a"; }
+.flaticon-mac:before { content: "\f15b"; }
+.flaticon-magnet:before { content: "\f15c"; }
+.flaticon-message:before { content: "\f15d"; }
+.flaticon-movie-library:before { content: "\f15e"; }
+.flaticon-movies:before { content: "\f15f"; }
+.flaticon-mp3:before { content: "\f160"; }
+.flaticon-mp4:before { content: "\f161"; }
+.flaticon-music:before { content: "\f162"; }
+.flaticon-music-other:before { content: "\f163"; }
+.flaticon-music-single:before { content: "\f164"; }
+.flaticon-music-video:before { content: "\f165"; }
+.flaticon-nds:before { content: "\f166"; }
+.flaticon-new:before { content: "\f167"; }
+.flaticon-ninja-portrait:before { content: "\f168"; }
+.flaticon-ninja-shuriken:before { content: "\f169"; }
+.flaticon-notice:before { content: "\f16a"; }
+.flaticon-old-joystick:before { content: "\f16b"; }
+.flaticon-oscars:before { content: "\f16c"; }
+.flaticon-other:before { content: "\f16d"; }
+.flaticon-other-file:before { content: "\f16e"; }
+.flaticon-peace:before { content: "\f16f"; }
+.flaticon-pencil:before { content: "\f170"; }
+.flaticon-phone:before { content: "\f171"; }
+.flaticon-phone-1:before { content: "\f172"; }
+.flaticon-pin:before { content: "\f173"; }
+.flaticon-playstation:before { content: "\f174"; }
+.flaticon-present-box2:before { content: "\f175"; }
+.flaticon-profile:before { content: "\f176"; }
+.flaticon-psp:before { content: "\f177"; }
+.flaticon-questionmark:before { content: "\f178"; }
+.flaticon-quote-left:before { content: "\f179"; }
+.flaticon-quote-right:before { content: "\f17a"; }
+.flaticon-radio:before { content: "\f17b"; }
+.flaticon-rench:before { content: "\f17c"; }
+.flaticon-report:before { content: "\f17d"; }
+.flaticon-rhombus:before { content: "\f17e"; }
+.flaticon-right-arrow:before { content: "\f17f"; }
+.flaticon-script:before { content: "\f180"; }
+.flaticon-search:before { content: "\f181"; }
+.flaticon-settings:before { content: "\f182"; }
+.flaticon-share:before { content: "\f183"; }
+.flaticon-shield-check:before { content: "\f184"; }
+.flaticon-shield-sat:before { content: "\f185"; }
+.flaticon-shield-squares:before { content: "\f186"; }
+.flaticon-shields-three:before { content: "\f187"; }
+.flaticon-skull:before { content: "\f188"; }
+.flaticon-snowflake1:before { content: "\f189"; }
+.flaticon-snowflake2:before { content: "\f18a"; }
+.flaticon-sound:before { content: "\f18b"; }
+.flaticon-square:before { content: "\f18c"; }
+.flaticon-star:before { content: "\f18d"; }
+.flaticon-stream:before { content: "\f18e"; }
+.flaticon-subscribe:before { content: "\f18f"; }
+.flaticon-svcd:before { content: "\f190"; }
+.flaticon-tag:before { content: "\f191"; }
+.flaticon-time:before { content: "\f192"; }
+.flaticon-top:before { content: "\f193"; }
+.flaticon-torrent-download:before { content: "\f194"; }
+.flaticon-trash:before { content: "\f195"; }
+.flaticon-trending:before { content: "\f196"; }
+.flaticon-triangle:before { content: "\f197"; }
+.flaticon-triforce:before { content: "\f198"; }
+.flaticon-trophy:before { content: "\f199"; }
+.flaticon-tutorial:before { content: "\f19a"; }
+.flaticon-tv:before { content: "\f19b"; }
+.flaticon-tv-library:before { content: "\f19c"; }
+.flaticon-two-arrows-left:before { content: "\f19d"; }
+.flaticon-two-arrows-right:before { content: "\f19e"; }
+.flaticon-two-arrows-up:before { content: "\f19f"; }
+.flaticon-two-down-arrows:before { content: "\f1a0"; }
+.flaticon-underline:before { content: "\f1a1"; }
+.flaticon-up:before { content: "\f1a2"; }
+.flaticon-uploads:before { content: "\f1a3"; }
+.flaticon-video-dual-sound:before { content: "\f1a4"; }
+.flaticon-wall:before { content: "\f1a5"; }
+.flaticon-warning:before { content: "\f1a6"; }
+.flaticon-wii:before { content: "\f1a7"; }
+.flaticon-world:before { content: "\f1a8"; }
+.flaticon-xbox:before { content: "\f1a9"; }
+.flaticon-xxx:before { content: "\f1aa"; }
+.flaticon-youtube:before { content: "\f1ab"; }
+
+
+
+
+.flaticon-editor-bold:before { content: "\f113"; }
+.flaticon-editor-italic:before { content: "\f14e"; }
+.flaticon-editor-underline:before { content: "\f1a1"; }
+.flaticon-editor-bulletlist:before { content: "\f157"; }
+.flaticon-editor-code:before { content: "\f142"; }
+.flaticon-editor-quote:before { content: "\f17a"; }
+.flaticon-editor-image:before { content: "\f14a"; }
+.flaticon-editor-link:before { content: "\f149"; }
+.flaticon-editor-youtube:before { content: "\f1ab"; }
+
+
