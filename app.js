@@ -1,5 +1,3 @@
-var servers = ["live.1337x-proxy.workers.dev"];
-const server = servers[Math.floor(Math.random()*servers.length)];
 var html = `<div class="mobile-menu"></div>
 <div class="top-bar">
 <div class="container">
