@@ -86,7 +86,7 @@ var html = `<div class="mobile-menu"></div>
 <li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh">Telegram</a></li> 
 </ul>
 <p class="info">1337x 1001 - 2050</p>
-<p class="info"><img src="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F1337x.netlify.app&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false"></p>
+<p class="info"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F1337x.netlify.app&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false"></p>
 <p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/1337x-homepage/badge/year"></p>
 <p class="info">This is just a proxy site, dmca original site and data from here will be automatically removed.</p>
 </footer>
