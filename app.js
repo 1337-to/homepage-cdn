@@ -93,6 +93,6 @@ var html = `<div class="mobile-menu"></div>
 </footer>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/jquery-1.11.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/auto-searchv2.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.3/js/auto-searchv2.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/main.js"></script>`;
 $('body').html(html);
