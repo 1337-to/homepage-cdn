@@ -35,7 +35,7 @@ var html = `<div class="mobile-menu"></div>
 <div class="box-info">
 <div class="box-info-heading clearfix"><h1> 1337x Updates</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
 <div class="box-info-detail clearfix">
-<p>This is a HTML Homepage only, hosted on https://github.com/1337-to/1337x-homepage and doesn't violate any copyright laws. The search button redirect to another sites depending on availablity by 1337x Proxy Provider Skynet Area 53 Servers. For DMCA contact original site at 1337x.to</p>
+<p>Official 1337x Websites are getting DDoS attacks that is why they have enabled Cloudflare Protection, until fixed, Proxy will Stay Down. For DMCA contact original site at 1337x.to</p>
 </div>
 </div>
 </div>
