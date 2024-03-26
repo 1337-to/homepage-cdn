@@ -94,7 +94,6 @@ var html = `<div class="mobile-menu"></div>
 <p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/1337x-homepage/badge/year"></p>
 <p class="info">This is just a proxy site, dmca original site and data from here will be automatically removed.</p>
 <p class="info">DMCA? Think about it carefully, this website or domain doesn't host any Copyrighted Material.</p>
-<p class="info">This redirect to external sites, and redirecting to anything isn't a crime.</p>
 <p class="info">More importantly, the websites it redirects to, also are just proxies with less than 50 KB of JS code each.</p>
 <p class="info">Go to Official site 1337x.to, if you're trying to file a Copyright claim.</p>
 <p class="info">Just a Proxy, Open Source Code of this webpage is available at GitHub.</p>
