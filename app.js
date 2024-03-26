@@ -16,7 +16,8 @@ var html = `<div class="mobile-menu"></div>
 <li class="green"><a href="https://`+server+`/`+newtime+`/home/" title="Full Home Page">Full Home Page</a></li>
 <li><a href="https://`+server+`/`+newtime+`/top-100" title="Top 100 Torrents">Top 100</a></li>
 <li><a href="https://`+server+`/`+newtime+`/trending" title="Trending Torrents">Trending</a></li>
-<li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh" title="Telegram">Telegram</a></li> 
+<li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh" title="Telegram">TG Group</a></li> 
+<li><a href="https://telegram.dog/HashHackers" title="Telegram">TG Channel</a></li> 
 </ul>
 </nav>
 </div>
@@ -35,7 +36,7 @@ var html = `<div class="mobile-menu"></div>
 <div class="box-info">
 <div class="box-info-heading clearfix"><h1> 1337x Updates</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
 <div class="box-info-detail clearfix">
-<p>Official 1337x Websites are getting DDoS attacks that is why they have enabled Cloudflare Protection, until fixed, Proxy will Stay Down. For DMCA contact original site at 1337x.to</p>
+<p>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to if offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. </p>
 </div>
 </div>
 </div>
