@@ -92,8 +92,11 @@ var html = `<div class="mobile-menu"></div>
 <p class="info"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F1337x.netlify.app&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false"></p>
 <p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/1337x-homepage/badge/year"></p>
 <p class="info">This is just a proxy site, dmca original site and data from here will be automatically removed.</p>
-<p class="info">DMCA? Think about it carefully, this website or domain doesn't host any Copyrighted Material. This redirect to external sites, and redirecting to anything isn't a crime. More importantly, the websites it redirects to, also are just proxies with less than 50 KB of JS code each.</p>
+<p class="info">DMCA? Think about it carefully, this website or domain doesn't host any Copyrighted Material.</p>
+<p class="info">This redirect to external sites, and redirecting to anything isn't a crime.</p>
+<p class="info">More importantly, the websites it redirects to, also are just proxies with less than 50 KB of JS code each.</p>
 <p class="info">Go to Official site 1337x.to, if you're trying to file a Copyright claim.</p>
+<p class="info">Just a Proxy, Open Source Code of this webpage is available at <a href="https://github.com/1337-to/1337x-homepage">GitHub</a>.</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/jquery-1.11.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/jquery-ui.js"></script>
