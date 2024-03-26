@@ -36,7 +36,7 @@ var html = `<div class="mobile-menu"></div>
 <div class="box-info">
 <div class="box-info-heading clearfix"><h1> 1337x Updates</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
 <div class="box-info-detail clearfix">
-<p>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to if offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. </p>
+<p>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to is offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. </p>
 </div>
 </div>
 </div>
