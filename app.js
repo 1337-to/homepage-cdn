@@ -25,7 +25,7 @@ var html = `<div class="mobile-menu"></div>
 <main class="container">
 <div class="row">
 <div class="col-8 col-push-2 page-content ">
-<div class="logo"><a href="https://`+server+`/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/images/logo-white-d.svg"></a></div>
+<div class="logo"><a href="https://`+server+`/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/images/logo-white-d.svg"></a></div>
 <div class="search-box">
 <form id="search-index-form" method="get" action="https://`+server+`/`+newtime+`/srch">
 <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
@@ -79,7 +79,7 @@ var html = `<div class="mobile-menu"></div>
 <div class="bitcoin-icon-wrap">
 <span class="bitcoin-icon"><i class="flaticon-bitcoin red"></i></span>
 </div>
-<span class="bitcoin-text"><span>Bitcoin Donate: </span><a href="bitcoin:3BgSznxLB5u4WiuVERb1dKWeTqSSwK9NPW">3BgSznxLB5u4WiuVERb1dKWeTqSSwK9NPW</a></span>
+<span class="bitcoin-text"><span>Bitcoin Donate: </span><a href="bitcoin:3Q1337xL2i6jXrXqZ5aMfhN4wp366GQc44">3Q1337xL2i6jXrXqZ5aMfhN4wp366GQc44</a></span>
 </div>
 <a class="scroll-top" href="#"><i class="flaticon-up"></i></a>
 <ul>
@@ -87,19 +87,19 @@ var html = `<div class="mobile-menu"></div>
 <li class="active"><a href="https://`+server+`/`+newtime+`/home/">Full Home Page</a></li>
 <li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh">TG Group</a></li> 
 <li><a href="https://telegram.dog/HashHackers">TG Channel</a></li>
-<li><a href="https://github.com/1337-to/1337x-homepage">GitHub</a></li>
+<li><a href="https://github.com/1337-to/homepage-cdn">GitHub</a></li>
 </ul>
 <p class="info">1337x 1001 - 2050, just a Proxy!</p>
 <p class="info"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F1337x.netlify.app&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false"></p>
-<p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/1337x-homepage/badge/year"></p>
+<p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/homepage-cdn/badge/year"></p>
 <p class="info">This is just a proxy site, dmca original site and data from here will be automatically removed.</p>
 <p class="info">DMCA? Think about it carefully, this website or domain doesn't host any Copyrighted Material.</p>
 <p class="info">More importantly, the websites it redirects to, also are just proxies with less than 50 KB of JS code each.</p>
 <p class="info">Go to Official site 1337x.to, if you're trying to file a Copyright claim.</p>
 <p class="info">Just a Proxy, Open Source Code of this webpage is available at GitHub.</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/jquery-1.11.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.3/js/auto-searchv2.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/1337x-homepage@1.0/js/main.js"></script>`;
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/auto-searchv2.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/main.js"></script>`;
 $('body').html(html);
