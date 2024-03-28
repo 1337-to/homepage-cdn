@@ -90,7 +90,7 @@ var html = `<div class="mobile-menu"></div>
 <li><a href="https://github.com/1337-to/homepage-cdn">GitHub</a></li>
 </ul>
 <p class="info">1337x 1001 - 2050, just a Proxy!</p>
-<p class="info"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F1337x.netlify.app&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false"></p>
+<p class="info"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2F1337x.netlify.app&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=Daily/Total Views&amp;edge_flat=false"></p>
 <p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/homepage-cdn/badge/year"></p>
 <p class="info">This is just a proxy site, dmca original site and data from here will be automatically removed.</p>
 <p class="info">DMCA? Think about it carefully, this website or domain doesn't host any Copyrighted Material.</p>
