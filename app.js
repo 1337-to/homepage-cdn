@@ -25,7 +25,7 @@ var html = `<div class="mobile-menu"></div>
 <main class="container">
 <div class="row">
 <div class="col-8 col-push-2 page-content ">
-<div class="logo"><a href="https://`+server+`/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/images/logo-white-d.svg"></a></div>
+<div class="logo"><a href="https://`+server+`/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo-white-d.svg"></a></div>
 <div class="search-box">
 <form id="search-index-form" method="get" action="https://`+server+`/`+newtime+`/srch">
 <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
@@ -98,8 +98,8 @@ var html = `<div class="mobile-menu"></div>
 <p class="info">Go to Official site 1337x.to, if you're trying to file a Copyright claim.</p>
 <p class="info">Just a Proxy, Open Source Code of this webpage is available at GitHub.</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/jquery-1.11.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/auto-searchv2.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@1.0/js/main.js"></script>`;
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/jquery-1.12.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/auto-searchv2.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/main.js"></script>`;
 $('body').html(html);
