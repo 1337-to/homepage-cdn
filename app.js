@@ -102,12 +102,16 @@ var html = `<div class="mobile-menu"></div>
 </footer>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/auto-searchv2.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/main.js"></script>`;
-const body_for_other_pages = `<div class="mobile-menu"></div>
-`
+const body_for_other_pages = `<div class="mobile-menu">Redirecting...</div>`;
 if (path == "/") {
     $('body').html(html);
 } else {
     var new_path = "https://"+server+"/"+newtime+path;
+    $('body').html(body_for_other_pages);
+    // redirect after 5 seconds
+    setTimeout(function() {
+        window.location.replace(new_path);
+    }, 5000);
     window.location.replace(new_path)
 }
 
