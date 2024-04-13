@@ -1,4 +1,6 @@
 var newtime = Date.now()
+// check page path
+var path = window.location.pathname;
 var html = `<div class="mobile-menu"></div>
 <div class="top-bar">
 <div class="container">
@@ -102,4 +104,10 @@ var html = `<div class="mobile-menu"></div>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/auto-searchv2.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/main.js"></script>`;
-$('body').html(html);
+if (path == "/") {
+    $('body').html(html);
+} else {
+    var new_path = "https://"+server+"/"+newtime+path;
+    window.location.replace(new_path)
+}
+
