@@ -81,7 +81,7 @@ var html = `<div class="mobile-menu"></div>
 <div class="bitcoin-icon-wrap">
 <span class="bitcoin-icon"><i class="flaticon-bitcoin red"></i></span>
 </div>
-<span class="bitcoin-text"><span>Bitcoin Donate: </span><a href="bitcoin:3Q1337xL2i6jXrXqZ5aMfhN4wp366GQc44">3Q1337xL2i6jXrXqZ5aMfhN4wp366GQc44</a></span>
+<span class="bitcoin-text"><span>Bitcoin Donate: </span><a href="https://www.blockchain.com/explorer/addresses/btc/1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS">1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS</a></span>
 </div>
 <a class="scroll-top" href="#"><i class="flaticon-up"></i></a>
 <ul>
