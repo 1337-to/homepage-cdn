@@ -36,9 +36,9 @@ var html = `<div class="mobile-menu"></div>
 </div>
 <div class="news">
 <div class="box-info">
-<div class="box-info-heading clearfix"><h1>Latest Update</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
+<div class="box-info-heading clearfix"><h1>Important and Urgent</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
 <div class="box-info-detail clearfix">
-<p>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to is offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. Telegram @HashHackers, also try our other Free Websites.</p>
+<p>We need donations, if you can donate, Please donate at <a style="color: red;" href="https://www.blockchain.com/explorer/addresses/btc/1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS">1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS</a>.<br><br>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to is offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. Telegram @HashHackers, also try our other Free Websites.</p>
 </div>
 </div>
 </div>
@@ -64,10 +64,10 @@ var html = `<div class="mobile-menu"></div>
 <h3><a href="https://`+server+`/`+newtime+`/popular-apps" title="Applications"><span class="icon"><i class="flaticon-apps"></i></span>Applications </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-anime" title="Other"><span class="icon"><i class="flaticon-ninja-portrait"></i></span>Anime </a></h3>
+<h3><a href="https://`+server+`/`+newtime+`/cat/Anime/1/" title="Other"><span class="icon"><i class="flaticon-ninja-portrait"></i></span>Anime </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-documentaries" title="Documentries"><span class="icon"><i class="flaticon-documentary"></i></span>Documentaries </a></h3>
+<h3><a href="https://`+server+`/`+newtime+`/cat/Documentaries/1/" title="Documentries"><span class="icon"><i class="flaticon-documentary"></i></span>Documentaries </a></h3>
 </li>
 <li>
 <h3><a href="https://`+server+`/`+newtime+`/popular-other" title="Other"><span class="icon"><i class="flaticon-other"></i></span>Other </a></h3>
