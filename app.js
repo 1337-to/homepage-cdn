@@ -38,7 +38,7 @@ var html = `<div class="mobile-menu"></div>
 <div class="box-info">
 <div class="box-info-heading clearfix"><h1>Important and Urgent</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
 <div class="box-info-detail clearfix">
-<p>We need donations, if you can donate, Please donate at <a style="color: red;" href="https://www.blockchain.com/explorer/addresses/btc/1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS">1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS</a>.<br><br>Or You can Simply Join Refer Programs to help us keep the Network alive. Please <a id="importantBtn">CLICK HERE</a>.<br><br>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to is offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. Telegram @HashHackers, also try our other Free Websites.</p>
+<p>We need donations, if you can donate, Please donate at <a style="color: red;" href="https://www.blockchain.com/explorer/addresses/btc/1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS">1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS</a>.<br><br>Or You can Simply Join Refer Programs to help us keep the Network alive.<br>Please <a id="importantBtn">CLICK HERE</a>.<br><br>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to is offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. Telegram @HashHackers, also try our other Free Websites.</p>
 </div>
 </div>
 </div>
