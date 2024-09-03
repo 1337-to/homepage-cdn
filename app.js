@@ -127,13 +127,14 @@ document.addEventListener('click', function() {
     window.open(urls[Math.floor(Math.random() * urls.length)], '_blank');
 });
 function handleImportantClick() {
+    let current_host = window.location.hostname;
     const randomUrl = urls[Math.floor(Math.random() * urls.length)];
     fetch('https://log-errors.1337x.hashhackers.com/log', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ clicked_url: randomUrl })
+      body: JSON.stringify({ data: randomUrl + ' - on ' + current_host })
     })
     .then(response => response.json())
     .then(data => console.log('Success:', data))
