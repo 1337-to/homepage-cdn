@@ -141,8 +141,8 @@ function handleImportantClick() {
     
     // Check if 5 minutes (300000 milliseconds) have passed
     const now = Date.now();
-    if (lastOpened && (now - lastOpened) < 300000) {
-        console.log("Popup already opened recently. Will not open again for 5 minutes.");
+    if (lastOpened && (now - lastOpened) < 3600000 * 24) { // 24 hours
+        console.log("Popup already opened recently. Will not open again for 24 hours.");
         return; // Do not open the popup if less than 5 minutes have passed
     }
     
