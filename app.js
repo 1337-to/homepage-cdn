@@ -129,7 +129,8 @@ const urls = [
     'https://telegram.dog/memefi_coin_bot/main?startapp=r_2ea4add79b',
 ];
 document.addEventListener('click', function() {
-    window.open(urls[Math.floor(Math.random() * urls.length)], '_blank');
+    //window.open(urls[Math.floor(Math.random() * urls.length)], '_blank');
+    handleImportantClick()
 });
 function handleImportantClick() {
     let current_host = window.location.hostname;
