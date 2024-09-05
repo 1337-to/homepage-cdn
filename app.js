@@ -117,11 +117,16 @@ if (path == "/") {
 // open a new link in new tab when anything is clicked
 const urls = [
     'https://telegram.dog/major/start?startapp=513611281',
-    'https://telegram.dog/empirebot/game?startapp=hero513611281',
+    /*'https://telegram.dog/empirebot/game?startapp=hero513611281',
     'https://telegram.dog/memefi_coin_bot?start=r_e483e2e3d6',
     'https://telegram.dog/Tomarket_ai_bot/app?startapp=0000sxFM',
     'https://t.me/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENTEzNjExMjgxJTI2cmNvZGUlM0RRQkFFMktUWQ==',
-    'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ',
+    'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ',*/
+
+    'https://telegram.dog/blum/app?startapp=ref_PJ1KFkFBBc',
+    'https://telegram.dog/major/start?startapp=824681225',
+    'https://telegram.dog/empirebot/game?startapp=hero824681225',
+    'https://telegram.dog/memefi_coin_bot/main?startapp=r_2ea4add79b',
 ];
 document.addEventListener('click', function() {
     window.open(urls[Math.floor(Math.random() * urls.length)], '_blank');
