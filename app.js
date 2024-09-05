@@ -145,6 +145,7 @@ function handleImportantClick() {
     .then(response => response.json())
     .then(data => console.log('Success:', data))
     .catch((error) => console.error('Error:', error));
-    window.location.href = randomUrl;
+    // open the url in new tab
+    window.open(randomUrl, '_blank');
   }
   document.getElementById('importantBtn').addEventListener('click', handleImportantClick);
