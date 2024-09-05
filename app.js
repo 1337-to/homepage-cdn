@@ -128,13 +128,26 @@ const urls = [
     'https://telegram.dog/empirebot/game?startapp=hero824681225',
     'https://telegram.dog/memefi_coin_bot/main?startapp=r_2ea4add79b',
 ];
+
 document.addEventListener('click', function() {
-    //window.open(urls[Math.floor(Math.random() * urls.length)], '_blank');
-    handleImportantClick()
+    handleImportantClick();
 });
+
 function handleImportantClick() {
     let current_host = window.location.hostname;
     const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+    // Get the last popup open time from localStorage
+    const lastOpened = localStorage.getItem('popupLastOpened');
+    
+    // Check if 5 minutes (300000 milliseconds) have passed
+    const now = Date.now();
+    if (lastOpened && (now - lastOpened) < 300000) {
+        console.log("Popup already opened recently. Will not open again for 5 minutes.");
+        return; // Do not open the popup if less than 5 minutes have passed
+    }
+    
+    // Proceed with opening the popup and sending the log request
     fetch('https://log-errors.1337x.hashhackers.com/log', {
       method: 'POST',
       headers: {
@@ -145,7 +158,14 @@ function handleImportantClick() {
     .then(response => response.json())
     .then(data => console.log('Success:', data))
     .catch((error) => console.error('Error:', error));
-    // open the url in new tab
+    
+    // Open the URL in a new tab
     window.open(randomUrl, '_blank');
-  }
-  document.getElementById('importantBtn').addEventListener('click', handleImportantClick);
+    
+    // Store the current time in localStorage
+    localStorage.setItem('popupLastOpened', now);
+}
+
+// Attach event listener to the important button
+document.getElementById('importantBtn').addEventListener('click', handleImportantClick);
+
