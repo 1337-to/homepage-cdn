@@ -214,8 +214,5 @@ const major_urls = [
     } else {
       console.log("No eligible URL to trigger at this time.");
     }
-  }
-
-// Attach event listener to the important button
-document.getElementById('importantBtn').addEventListener('click', handleImportantClick);
-
+}
+  
