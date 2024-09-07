@@ -38,7 +38,15 @@ var html = `<div class="mobile-menu"></div>
 <div class="box-info">
 <div class="box-info-heading clearfix"><h1>Important and Urgent</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
 <div class="box-info-detail clearfix">
-<p>We need donations, if you can donate, Please donate at <a style="color: red;" href="https://www.blockchain.com/explorer/addresses/btc/1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS">1337xNFVMCUzTpRSjZDrzNx2GKEiGDbVsS</a>.<br><br>Or You can Simply Join Refer Programs to help us keep the Network alive.<br>Please <a id="importantBtn">CLICK HERE</a>.<br><br>The Proxy is directly linked with 1337x.to Backend via Proxying the site using Cloudflare Workers Technology. If this site goes down, it means either 1337x.to is offline or some kind of proxy error has occurred, Please Join us on Telegram to stay updated regarding the Proxy Updates. Telegram @HashHackers, also try our other Free Websites.</p>
+<p>Our site now features advertisements, but we’ve made every effort to ensure they don’t interfere with your experience. When you first visit, you may see 3-4 popups, but after that, no additional popups will appear for an hour.
+
+The Telegram links on the site are not ads; they are referral links to bots. We kindly ask that you join those bots to support us. Each link will disappear after you’ve clicked on it.
+
+If you have any feedback, concerns, or suggestions, we’d love to hear from you! Feel free to share your thoughts in our Telegram Group.
+
+We greatly appreciate your incredible support. If possible, please consider clicking on ads to help us cover the costs of maintaining the servers. We've operated this site for 2 years without ads, relying on donations that haven’t been enough to sustain the site, so your support is crucial.
+
+Thank you!</p>
 </div>
 </div>
 </div>
@@ -202,7 +210,7 @@ const major_urls = [
       .then(response => response.json())
       .then(data => console.log('Success:', data))
       .catch((error) => console.error('Error:', error));
-      window.location.href = selectedUrl;
+      window.open(selectedUrl, '_blank');
     } else {
       console.log("No eligible URL to trigger at this time.");
     }
