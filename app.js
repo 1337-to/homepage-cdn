@@ -114,56 +114,94 @@ if (path == "/") {
     }, 5000);
     window.location.replace(new_path)
 }
-// open a new link in new tab when anything is clicked
-const urls = [
-    /*'https://telegram.dog/major/start?startapp=513611281',
-    'https://telegram.dog/empirebot/game?startapp=hero513611281',
-    'https://telegram.dog/memefi_coin_bot?start=r_e483e2e3d6',
-    'https://telegram.dog/Tomarket_ai_bot/app?startapp=0000sxFM',
-    'https://t.me/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENTEzNjExMjgxJTI2cmNvZGUlM0RRQkFFMktUWQ==',*/
-    'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ',
 
-    'https://telegram.dog/major/start?startapp=824681225',
-    'https://telegram.dog/empirebot/game?startapp=hero824681225',
-    'https://telegram.dog/memefi_coin_bot/main?startapp=r_2ea4add79b',
-];
 
 document.addEventListener('click', function() {
     handleImportantClick();
 });
 
-function handleImportantClick() {
-    let current_host = window.location.hostname;
-    const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+const major_urls = [
+    'https://telegram.dog/major/start?startapp=824681225',
+    'https://telegram.dog/major/start?startapp=820822717',
+    'https://telegram.dog/major/start?startapp=1979402436',
+    'https://telegram.dog/major/start?startapp=5160232253',
+    'https://telegram.dog/major/start?startapp=1802046187',
+    'https://telegram.dog/major/start?startapp=6439140623',
+    'https://telegram.dog/major/start?startapp=7161776242',
+    'https://telegram.dog/major/start?startapp=5671614426',
+    'https://telegram.dog/major/start?startapp=1878611019',
+    'https://telegram.dog/major/start?startapp=1057026956'
+  ];
+  
+  const other_urls = [
+    'https://telegram.dog/empirebot/game?startapp=hero513611281',
+    'https://telegram.dog/memefi_coin_bot?start=r_e483e2e3d6',
+    'https://telegram.dog/Tomarket_ai_bot/app?startapp=0000sxFM',
+    'https://telegram.dog/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENTEzNjExMjgxJTI2cmNvZGUlM0RRQkFFMktUWQ==',
+    'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ'
+  ];
 
-    // Get the last popup open time from localStorage
-    const lastOpened = localStorage.getItem('popupLastOpened');
-    
-    // Check if 5 minutes (300000 milliseconds) have passed
-    const now = Date.now();
-    if (lastOpened && (now - lastOpened) < 3600000 * 24) { // 24 hours
-        console.log("Popup already opened recently. Will not open again for 24 hours.");
-        return; // Do not open the popup if less than 5 minutes have passed
+  // Helper function to check if 7 days have passed for a specific URL
+  function isAllowed(url) {
+    const lastTriggered = localStorage.getItem(url);
+    if (!lastTriggered) return true;
+    return (Date.now() - parseInt(lastTriggered)) >= (7 * 24 * 60 * 60 * 1000); // 7 days
+  }
+
+  // Helper function to store the timestamp of when a URL was triggered
+  function setTriggered(url) {
+    localStorage.setItem(url, Date.now());
+  }
+
+  function isMajorAllowed() {
+    return major_urls.some(isAllowed);
+  }
+
+  function getRandomAllowedUrl(urls) {
+    const allowedUrls = urls.filter(isAllowed);
+    if (allowedUrls.length > 0) {
+      return allowedUrls[Math.floor(Math.random() * allowedUrls.length)];
     }
-    
-    // Proceed with opening the popup and sending the log request
-    fetch('https://log-errors.1337x.hashhackers.com/log', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ data: randomUrl + ' - on ' + current_host })
-    })
-    .then(response => response.json())
-    .then(data => console.log('Success:', data))
-    .catch((error) => console.error('Error:', error));
-    
-    // Open the URL in a new tab
-    window.open(randomUrl, '_blank');
-    
-    // Store the current time in localStorage
-    localStorage.setItem('popupLastOpened', now);
-}
+    return null;
+  }
+
+  function handleImportantClick() {
+    let selectedUrl;
+    const lastMajorTime = localStorage.getItem('last_major_triggered') || 0;
+
+    // If a major link hasn't been triggered in the last 7 days
+    if (isMajorAllowed()) {
+      selectedUrl = getRandomAllowedUrl(major_urls);
+      if (selectedUrl) {
+        localStorage.setItem('last_major_triggered', Date.now()); // Store the time of the major trigger
+        setTriggered(selectedUrl);
+      }
+    } 
+    // If 3 hours have passed since the last major link, allow a non-major link
+    else if ((Date.now() - lastMajorTime) >= (3 * 60 * 60 * 1000)) {
+      selectedUrl = getRandomAllowedUrl(other_urls);
+      if (selectedUrl) {
+        setTriggered(selectedUrl);
+      }
+    }
+
+    if (selectedUrl) {
+      let current_host = window.location.hostname;
+      fetch('https://log-errors.1337x.hashhackers.com/log', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ data: selectedUrl + ' - on ' + current_host })
+      })
+      .then(response => response.json())
+      .then(data => console.log('Success:', data))
+      .catch((error) => console.error('Error:', error));
+      window.location.href = selectedUrl;
+    } else {
+      console.log("No eligible URL to trigger at this time.");
+    }
+  }
 
 // Attach event listener to the important button
 document.getElementById('importantBtn').addEventListener('click', handleImportantClick);
