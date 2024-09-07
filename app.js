@@ -138,7 +138,12 @@ const major_urls = [
     'https://telegram.dog/memefi_coin_bot?start=r_e483e2e3d6',
     'https://telegram.dog/Tomarket_ai_bot/app?startapp=0000sxFM',
     'https://telegram.dog/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENTEzNjExMjgxJTI2cmNvZGUlM0RRQkFFMktUWQ==',
-    'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ'
+    'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ',
+    'https://t.me/Agent301Bot/app?startapp=onetime513611281',
+    'https://t.me/realgoats_bot/run?startapp=7113493a-3aa4-4992-9cbd-b0d8840bb0d6',
+    'https://t.me/Vanilla_Finance_Bot/Vanillafinance?startapp=inviteId10418044',
+    'https://t.me/catizenbot/gameapp?startapp=r_2811_8222174',
+    'https://t.me/TimeFarmCryptoBot?start=XDbFVcMCrJrQISwi',
   ];
 
   // Helper function to check if 7 days have passed for a specific URL
