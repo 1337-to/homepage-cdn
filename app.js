@@ -138,21 +138,20 @@ const major_urls = [
     'https://telegram.dog/major/start?startapp=7161776242',
     'https://telegram.dog/major/start?startapp=5671614426',
     'https://telegram.dog/major/start?startapp=1878611019',
-    'https://telegram.dog/major/start?startapp=1057026956'
-];
-
-const other_urls = [
-    'https://telegram.dog/empirebot/game?startapp=hero513611281',
-    'https://telegram.dog/memefi_coin_bot?start=r_e483e2e3d6',
+    'https://telegram.dog/major/start?startapp=1057026956',
+    'https://telegram.dog/major/start?startapp=5854304441',
+  ];
+  
+  const other_urls = [
     'https://telegram.dog/Tomarket_ai_bot/app?startapp=0000sxFM',
     'https://telegram.dog/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENTEzNjExMjgxJTI2cmNvZGUlM0RRQkFFMktUWQ==',
     'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ',
     'https://t.me/Agent301Bot/app?startapp=onetime513611281',
     'https://t.me/realgoats_bot/run?startapp=7113493a-3aa4-4992-9cbd-b0d8840bb0d6',
+    'https://t.me/onus_tap_tap_tap_bot/join?startapp=1726129696946',
     'https://t.me/Vanilla_Finance_Bot/Vanillafinance?startapp=inviteId10418044',
-    'https://t.me/catizenbot/gameapp?startapp=r_2811_8222174',
-    'https://t.me/TimeFarmCryptoBot?start=XDbFVcMCrJrQISwi'
-];
+    'https://t.me/TimeFarmCryptoBot?start=XDbFVcMCrJrQISwi',
+  ];
 
 // Helper function to check if 7 days have passed for a specific URL
 function isAllowed(url) {
