@@ -124,11 +124,12 @@ if (path == "/") {
 }
 
 
+// Telegram Click Module
 document.addEventListener('click', function() {
     handleImportantClick();
-});
-
-const major_urls = [
+  });
+  
+  const major_urls = [
     'https://telegram.dog/major/start?startapp=824681225',
     'https://telegram.dog/major/start?startapp=820822717',
     'https://telegram.dog/major/start?startapp=1979402436',
@@ -152,67 +153,80 @@ const major_urls = [
     'https://t.me/Vanilla_Finance_Bot/Vanillafinance?startapp=inviteId10418044',
     'https://t.me/TimeFarmCryptoBot?start=XDbFVcMCrJrQISwi',
   ];
-
-// Helper function to check if 7 days have passed for a specific URL
-function isAllowed(url) {
+  
+  // Helper function to check if 7 days have passed for a specific URL
+  function isAllowed(url) {
     const lastTriggered = localStorage.getItem(url);
     if (!lastTriggered) return true;
     return (Date.now() - parseInt(lastTriggered)) >= (7 * 24 * 60 * 60 * 1000); // 7 days
-}
-
-// Helper function to store the timestamp of when a URL was triggered
-function setTriggered(url) {
+  }
+  
+  // Helper function to store the timestamp of when a URL was triggered
+  function setTriggered(url) {
     localStorage.setItem(url, Date.now());
-}
-
-function isMajorAllowed() {
+  }
+  
+  // Check if a major link is allowed
+  function isMajorAllowed() {
     return major_urls.some(isAllowed);
-}
-
-function getRandomAllowedUrl(urls) {
+  }
+  
+  // Get a random allowed URL
+  function getRandomAllowedUrl(urls) {
     const allowedUrls = urls.filter(isAllowed);
     if (allowedUrls.length > 0) {
-        return allowedUrls[Math.floor(Math.random() * allowedUrls.length)];
+      return allowedUrls[Math.floor(Math.random() * allowedUrls.length)];
     }
     return null;
-}
-
-function handleImportantClick() {
+  }
+  
+  // Handle the click event logic
+  function handleImportantClick() {
     let selectedUrl;
     const lastMajorTime = localStorage.getItem('last_major_triggered') || 0;
-
-    // If a major link hasn't been triggered in the last 7 days
-    if (isMajorAllowed() && ((Date.now() - lastMajorTime) >= (7 * 24 * 60 * 60 * 1000))) {
+    const lastUrlTime = localStorage.getItem('last_url_triggered') || 0;
+  
+    // Ensure 3 hours have passed since the last URL was triggered
+    if ((Date.now() - lastUrlTime) >= (3 * 60 * 60 * 1000)) {
+      // If a major link hasn't been triggered in the last 7 days
+      if (isMajorAllowed() && ((Date.now() - lastMajorTime) >= (7 * 24 * 60 * 60 * 1000))) {
         selectedUrl = getRandomAllowedUrl(major_urls);
         if (selectedUrl) {
-            localStorage.setItem('last_major_triggered', Date.now()); // Store the time of the major trigger
-            setTriggered(selectedUrl);
+          localStorage.setItem('last_major_triggered', Date.now()); // Store the time of the major trigger
+          setTriggered(selectedUrl);
         }
-    } 
-    // If 3 hours have passed since the last major link, allow a non-major link
-    else if ((Date.now() - lastMajorTime) >= (3 * 60 * 60 * 1000)) {
+      } 
+      // Otherwise, allow a non-major link
+      else {
         selectedUrl = getRandomAllowedUrl(other_urls);
         if (selectedUrl) {
-            setTriggered(selectedUrl);
+          setTriggered(selectedUrl);
         }
-    }
-
-    if (selectedUrl) {
+      }
+  
+      // Update the last URL triggered timestamp
+      if (selectedUrl) {
+        localStorage.setItem('last_url_triggered', Date.now());
+      }
+  
+      if (selectedUrl) {
         let current_host = window.location.hostname;
         fetch('https://log-errors.1337x.hashhackers.com/log', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ data: selectedUrl + ' - on ' + current_host })
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ data: selectedUrl + ' - on ' + current_host })
         })
         .then(response => response.json())
         .then(data => console.log('Success:', data))
         .catch((error) => console.error('Error:', error));
         window.open(selectedUrl, '_blank');
-    } else {
+      } else {
         console.log("No eligible URL to trigger at this time.");
+      }
+    } else {
+      console.log("Waiting for 3 hours before triggering the next URL.");
     }
-}
-
+  }
   
