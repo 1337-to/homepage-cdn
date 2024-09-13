@@ -144,6 +144,7 @@ document.addEventListener('click', function() {
   ];
   
   const other_urls = [
+    'https://telegram.dog/rocky_rabbit_bot/play?startapp=frId513611281',
     'https://telegram.dog/Tomarket_ai_bot/app?startapp=0000sxFM',
     'https://telegram.dog/xkucoinbot/kucoinminiapp?startapp=cm91dGU9JTJGdGFwLWdhbWUlM0ZpbnZpdGVyVXNlcklkJTNENTEzNjExMjgxJTI2cmNvZGUlM0RRQkFFMktUWQ==',
     'https://telegram.dog/catsgang_bot/join?startapp=jQ3_NW2eybyKjSCJYbrHZ',
