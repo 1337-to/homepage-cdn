@@ -42,7 +42,7 @@ let isBlocked = blocked_keywords.some(keyword => pathname.includes(keyword));
 
 // Only execute the IIFE if the pathname does not contain any blocked keywords
 if (!isBlocked) {
-  (function() {
+  /*(function() {
       const url = new URL(window.location.href);
       const clickID = url.searchParams.get("click_id");
       const sourceID = url.searchParams.get("source_id");
@@ -60,6 +60,6 @@ if (!isBlocked) {
           opts.actions.onError = () => {};
       };
       document.head.appendChild(s);
-  })();
+  })();*/
 }
 
