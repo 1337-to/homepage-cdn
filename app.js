@@ -126,7 +126,8 @@ if (path == "/") {
 
 // Telegram Click Module
 document.addEventListener('click', function() {
-    handleImportantClick();
+  // Ads Disabled  
+  //handleImportantClick();
   });
   
   const major_urls = [
