@@ -15,9 +15,9 @@ var html = `<div class="mobile-menu"></div>
 <a href="#" class="navbar-menu"><span></span><span></span><span></span></a>
 <nav>
 <ul class="main-navigation">
-<li class="green"><a href="https://`+server+`/`+newtime+`/home/" title="Full Home Page">Full Home Page</a></li>
-<li><a href="https://`+server+`/`+newtime+`/top-100" title="Top 100 Torrents">Top 100</a></li>
-<li><a href="https://`+server+`/`+newtime+`/trending" title="Trending Torrents">Trending</a></li>
+<li class="green"><a href="/processor/?path=/`+newtime+`/home/" title="Full Home Page">Full Home Page</a></li>
+<li><a href="/processor/?path=/`+newtime+`/top-100" title="Top 100 Torrents">Top 100</a></li>
+<li><a href="/processor/?path=/`+newtime+`/trending" title="Trending Torrents">Trending</a></li>
 <li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh" title="Telegram">TG Group</a></li> 
 <li><a href="https://telegram.dog/HashHackers" title="Telegram">TG Channel</a></li> 
 </ul>
@@ -27,9 +27,9 @@ var html = `<div class="mobile-menu"></div>
 <main class="container">
 <div class="row">
 <div class="col-8 col-push-2 page-content ">
-<div class="logo"><a href="https://`+server+`/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo-white-d.svg"></a></div>
+<div class="logo"><a href="/processor/?path=/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo-white-d.svg"></a></div>
 <div class="search-box">
-<form id="search-index-form" method="get" action="https://`+server+`/`+newtime+`/srch">
+<form id="search-index-form" method="get" action="/processor/?path=/`+newtime+`/srch">
 <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
 <button type="submit" class="btn btn-search"><i class="flaticon-search"></i><span>Search</span></button>
 </form>
@@ -55,33 +55,33 @@ Thank you!</p>
 </main>
 <ul class="search-categories">
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-movies" title="Movies"><span class="icon"><i class="flaticon-movies"></i></span>Movies </a></h3>
-<a href="https://`+server+`/`+newtime+`/movie-library/1/" class="library">Library</a>
+<h3><a href="/processor/?path=/`+newtime+`/popular-movies" title="Movies"><span class="icon"><i class="flaticon-movies"></i></span>Movies </a></h3>
+<a href="/processor/?path=/`+newtime+`/movie-library/1/" class="library">Library</a>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-tv" title="Television"><span class="icon"><i class="flaticon-tv"></i></span>Television </a></h3>
-<a href="https://`+server+`/`+newtime+`/series-library/a/1/" class="library">Library</a>
+<h3><a href="/processor/?path=/`+newtime+`/popular-tv" title="Television"><span class="icon"><i class="flaticon-tv"></i></span>Television </a></h3>
+<a href="/processor/?path=/`+newtime+`/series-library/a/1/" class="library">Library</a>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-games" title="Games"><span class="icon"><i class="flaticon-games"></i></span>Games </a></h3>
+<h3><a href="/processor/?path=/`+newtime+`/popular-games" title="Games"><span class="icon"><i class="flaticon-games"></i></span>Games </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-music" title="Musics"><span class="icon"><i class="flaticon-music"></i></span>Music </a></h3>
+<h3><a href="/processor/?path=/`+newtime+`/popular-music" title="Musics"><span class="icon"><i class="flaticon-music"></i></span>Music </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-apps" title="Applications"><span class="icon"><i class="flaticon-apps"></i></span>Applications </a></h3>
+<h3><a href="/processor/?path=/`+newtime+`/popular-apps" title="Applications"><span class="icon"><i class="flaticon-apps"></i></span>Applications </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/cat/Anime/1/" title="Other"><span class="icon"><i class="flaticon-ninja-portrait"></i></span>Anime </a></h3>
+<h3><a href="/processor/?path=/`+newtime+`/cat/Anime/1/" title="Other"><span class="icon"><i class="flaticon-ninja-portrait"></i></span>Anime </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/cat/Documentaries/1/" title="Documentries"><span class="icon"><i class="flaticon-documentary"></i></span>Documentaries </a></h3>
+<h3><a href="/processor/?path=/`+newtime+`/cat/Documentaries/1/" title="Documentries"><span class="icon"><i class="flaticon-documentary"></i></span>Documentaries </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-other" title="Other"><span class="icon"><i class="flaticon-other"></i></span>Other </a></h3>
+<h3><a href="/processor/?path=/`+newtime+`/popular-other" title="Other"><span class="icon"><i class="flaticon-other"></i></span>Other </a></h3>
 </li>
 <li>
-<h3><a href="https://`+server+`/`+newtime+`/popular-xxx" title="XXX"><span class="icon"><i class="flaticon-xxx"></i></span>XXX </a></h3>
+<h3><a href="/processor/?path=/`+newtime+`/popular-xxx" title="XXX"><span class="icon"><i class="flaticon-xxx"></i></span>XXX </a></h3>
 </li>
 </ul>
 <footer>
@@ -94,7 +94,7 @@ Thank you!</p>
 <a class="scroll-top" href="#"><i class="flaticon-up"></i></a>
 <ul>
 <li><a href="https://1337x-to.pages.dev">Home</a></li>
-<li class="active"><a href="https://`+server+`/`+newtime+`/home/">Full Home Page</a></li>
+<li class="active"><a href="/processor/?path=/`+newtime+`/home/">Full Home Page</a></li>
 <li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh">TG Group</a></li> 
 <li><a href="https://telegram.dog/HashHackers">TG Channel</a></li>
 <li><a href="https://github.com/1337-to/homepage-cdn">GitHub</a></li>
