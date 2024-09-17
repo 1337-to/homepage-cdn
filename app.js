@@ -29,9 +29,9 @@ var html = `<div class="mobile-menu"></div>
 <div class="col-8 col-push-2 page-content ">
 <div class="logo"><a href="/processor/?path=/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo-white-d.svg"></a></div>
 <div class="search-box">
-<form id="search-index-form" method="get" action="/processor/?path=/`+newtime+`/srch">
-<input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
-<button type="submit" class="btn btn-search"><i class="flaticon-search"></i><span>Search</span></button>
+<form id="search-index-form" method="get" action="">
+  <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
+  <button type="submit" class="btn btn-search"><i class="flaticon-search"></i><span>Search</span></button>
 </form>
 </div>
 <div class="news">
@@ -109,7 +109,22 @@ Thank you!</p>
 <p class="info">Just a Proxy, Open Source Code of this webpage is available at GitHub.</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/auto-searchv2.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/main.js"></script>`;
+<script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/main.js"></script>
+<script>
+  document.getElementById("search-index-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    var form = event.target;
+    var searchQuery = document.getElementById('autocomplete').value;
+
+    // Set the action dynamically using string concatenation
+    form.action = '/processor/?path=/' + newtime + '/srch&search=' + encodeURIComponent(searchQuery);
+
+    // Now submit the form programmatically
+    form.submit();
+  });
+</script>
+`;
 const body_for_other_pages = `<div class="mobile-menu">Redirecting...</div>`;
 if (path == "/") {
     $('body').html(html);
