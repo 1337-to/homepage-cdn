@@ -36,17 +36,13 @@ var html = `<div class="mobile-menu"></div>
 </div>
 <div class="news">
 <div class="box-info">
-<div class="box-info-heading clearfix"><h1>Important and Urgent</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
+<div class="box-info-heading clearfix"><h1>Important Update</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
 <div class="box-info-detail clearfix">
-<p>Our site now features advertisements, but we’ve made every effort to ensure they don’t interfere with your experience. When you first visit, you may see 3-4 popups, but after that, no additional popups will appear for an hour.
-
-The Telegram links on the site are not ads; they are referral links to bots. We kindly ask that you join those bots to support us. Each link will disappear after you’ve clicked on it.
-
-If you have any feedback, concerns, or suggestions, we’d love to hear from you! Feel free to share your thoughts in our Telegram Group.
-
-We greatly appreciate your incredible support. If possible, please consider clicking on ads to help us cover the costs of maintaining the servers. We've operated this site for 2 years without ads, relying on donations that haven’t been enough to sustain the site, so your support is crucial.
-
-Thank you!</p>
+<p>This very website ran for 3 Years without any Ads and Servers were paid by the Proxy Maintainer from their pockets, and due to serious life issues, we cannot afford that anymore, that's why we had to introduce ads, We're extremely sorry for these ads but they are required to maintain Proxy Servers, Databases, CDN Cache etc.</p>
+<p>-----------------------------------------</p>
+<p>There are alot of other things we provide for Free, which sometimes have ads and sometimes do not have any ads at all. To Try those. Try Below Link.</p>
+<p><img src="https://cdn-api-network.pages.dev/images/new-image.png" width="100px"></p>
+<p>Visit <a href="1337x.hashhackers.com">1337x.hashhackers.com</a></p>
 </div>
 </div>
 </div>
