@@ -42,7 +42,7 @@ var html = `<div class="mobile-menu"></div>
 <p>-----------------------------------------</p>
 <p>There are alot of other things we provide for Free, which sometimes have ads and sometimes do not have any ads at all. To Try those. Try Below Link.</p>
 <p><img src="https://cdn-api-network.pages.dev/images/new-image.png" width="100px"></p>
-<p>Visit <a href="1337x.hashhackers.com">1337x.hashhackers.com</a></p>
+<p>Visit <a href="https://1337x.hashhackers.com">1337x.hashhackers.com</a></p>
 </div>
 </div>
 </div>
