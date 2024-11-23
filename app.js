@@ -27,7 +27,7 @@ var html = `<div class="mobile-menu"></div>
 <main class="container">
 <div class="row">
 <div class="col-8 col-push-2 page-content ">
-<div class="logo"><a href="/processor/?path=/`+newtime+`/home/"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo-white-d.svg"></a></div>
+<div class="logo"><a href="https://1337x.hashhackers.com"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo-white-d.svg"></a></div>
 <div class="search-box">
 <form id="search-index-form" method="get" action="">
   <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
