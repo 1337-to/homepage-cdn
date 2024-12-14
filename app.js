@@ -93,7 +93,7 @@ Thank you!</p>
 </div>
 <a class="scroll-top" href="#"><i class="flaticon-up"></i></a>
 <ul>
-<li><a href="https://1337x-to.pages.dev">Home</a></li>
+<li><a href="https://1337x.hashhackers.com">Home</a></li>
 <li class="active"><a href="/processor/?path=/`+newtime+`/home/">Full Home Page</a></li>
 <li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh">TG Group</a></li> 
 <li><a href="https://telegram.dog/HashHackers">TG Channel</a></li>
