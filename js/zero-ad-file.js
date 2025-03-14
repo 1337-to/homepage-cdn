@@ -119,7 +119,7 @@ var html = `<div class="mobile-menu"></div>
     var searchQuery = document.getElementById('autocomplete').value;
 
     // Set the action dynamically using string concatenation
-    form.action = '/srch&search=' + encodeURIComponent(searchQuery);
+    form.action = '/srch';
 
     // Now submit the form programmatically
     form.submit();
