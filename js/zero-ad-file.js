@@ -98,10 +98,9 @@ var html = `<div class="mobile-menu"></div>
 <li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh">TG Group</a></li> 
 <li><a href="https://telegram.dog/HashHackers">TG Channel</a></li>
 <li><a href="https://github.com/1337-to/homepage-cdn">GitHub</a></li>
-<li><a href="https://www.reddit.com/r/1337x/comments/1hsd9bw/just_for_the_community_1337x_adfree_proxy/">Ad-Free Sites</a></li>
 </ul>
 <p class="info">1337x 1001 - 2050, just a Proxy!</p>
-<p class="info"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://1337x-adfree.hashhackers.com&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=Daily/Total Views&amp;edge_flat=false"></p>
+<p class="info"><img src="https://hits.sh/1337x.hashhackers.com.svg?view=today-total&style=for-the-badge&label=HashHackers&extraCount=952458626854&color=080e08&labelColor=9c3232"></p>
 <p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/homepage-cdn/badge/year"></p>
 <p class="info">This is just a proxy site, dmca original site and data from here will be automatically removed.</p>
 <p class="info">DMCA? Think about it carefully, this website or domain doesn't host any Copyrighted Material.</p>
