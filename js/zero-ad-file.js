@@ -29,22 +29,21 @@ var html = `<div class="mobile-menu"></div>
 <div class="col-8 col-push-2 page-content ">
 <div class="logo"><a href="https://hashhackers.com" style="color:white;"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo.svg"><img alt="logo" src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/images/logo-white-d.svg"></a>High Speed 1337x Proxy Network</div>
 <div class="search-box">
-<form id="search-index-form" method="get" action="">
-  <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
-  <button type="submit" class="btn btn-search"><i class="flaticon-search"></i><span>Search</span></button>
+<form id="search-index-form" method="get" action="" onsubmit="return validateSearch()">
+  <div class="mb-3">
+    <input type="search" placeholder="Search for torrents.." id="autocomplete" name="search" class="ui-autocomplete-input form-control">
+    <div id="search-warning" class="text-danger mt-1" style="display: none;">Please enter at least 3 characters.</div>
+  </div>
+  <button type="submit" class="btn btn-search">
+    <i class="flaticon-search"></i><span>Search</span>
+  </button>
 </form>
 </div>
 <div class="news">
 <div class="box-info">
-<div class="box-info-heading clearfix"><h1>Avoid Fake Websites</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>Today</span></div>
+<div class="box-info-heading clearfix"><h1>Avoid Fake Websites</h1> <span class="box-info-right box-info-time"><i class="flaticon-time"></i>30 May 2025</span></div>
 <div class="box-info-detail clearfix">
-<p>This is a CDN-based proxy service for the official 1337x website. Please note that 1337x.to is the original website. Visiting any other site may expose you to fake websites and potential risks.</p>
-<hr>
-<p>This proxy is managed by Hash Hackers and can be verified by comparing the data and magnet links on both the original and proxy websites. For added convenience, you can click on the logo above to access the homepage, which lists other proxy websites.</p>
-<p>Your safety is our priority:</p>
-<p></p>
-<p>1. To protect your credentials, logging in through this proxy service is not permitted.</p>
-<p>2. The main domain (hashhackers.com) does not host any copyrighted materials. Proxy domains only facilitate access to data and do not directly host any content.</p>
+<p>Avoid fake websites as they contain Viruses and Malware. Even websites shown by Google are fake and fraud. Visit Wikipedia Page to find official websites.</p>
 <hr>
 <p><a href="https://1337x.hashhackers.com/how-to-download-from-1337x/">KNOW HOW TO DOWNLOAD TORRENTS FROM 1337X WEBSITE.</a></p>
 </div>
@@ -98,9 +97,10 @@ var html = `<div class="mobile-menu"></div>
 <li><a href="https://telegram.dog/joinchat/5PYMXpqIV2M4MDJh">TG Group</a></li> 
 <li><a href="https://telegram.dog/HashHackers">TG Channel</a></li>
 <li><a href="https://github.com/1337-to/homepage-cdn">GitHub</a></li>
+<li><a href="https://www.reddit.com/r/1337x/comments/1hsd9bw/just_for_the_community_1337x_adfree_proxy/">Ad-Free Sites</a></li>
 </ul>
 <p class="info">1337x 1001 - 2050, just a Proxy!</p>
-<p class="info"><img src="https://hits.sh/1337x.hashhackers.com.svg?view=today-total&style=for-the-badge&label=HashHackers&extraCount=952458626854&color=080e08&labelColor=9c3232"></p>
+<p class="info"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://1337x-adfree.hashhackers.com&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=Daily/Total Views&amp;edge_flat=false"></p>
 <p class="info"><img src="https://data.jsdelivr.com/v1/package/gh/1337-to/homepage-cdn/badge/year"></p>
 <p class="info">This is just a proxy site, dmca original site and data from here will be automatically removed.</p>
 <p class="info">DMCA? Think about it carefully, this website or domain doesn't host any Copyrighted Material.</p>
@@ -111,18 +111,34 @@ var html = `<div class="mobile-menu"></div>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/auto-searchv2.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/1337-to/homepage-cdn@2.0/js/main.js"></script>
 <script>
-  document.getElementById("search-index-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
+  function validateSearch() {
+    const input = document.getElementById('autocomplete').value.trim();
+    const warning = document.getElementById('search-warning');
 
-    var form = event.target;
-    var searchQuery = document.getElementById('autocomplete').value;
+    if (input.length < 3) {
+      warning.style.display = 'block';
+      return false;
+    }
 
-    // Set the action dynamically using string concatenation
-    form.action = '/srch';
+    warning.style.display = 'none';
+    return true;
+  }
 
-    // Now submit the form programmatically
-    form.submit();
-  });
+document.getElementById("search-index-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Always prevent default
+
+  if (!validateSearch()) {
+    return; // Stop if input is less than 3 characters
+  }
+
+  var form = event.target;
+  var searchQuery = document.getElementById('autocomplete').value;
+
+  // Set the action dynamically
+  form.action = '/' + newtime + '/srch&search=' + encodeURIComponent(searchQuery);
+
+  form.submit();
+});
 </script>
 `;
 
