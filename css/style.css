@@ -6345,7 +6345,7 @@ small.user {
 }
 .search-index-page .search-box {
   position: relative;
-  margin: 0 7% 100px 7%;
+  margin: 0 7% 100px 4%;
 }
 .search-index-page .search-box .form-control {
   width: 100%;
